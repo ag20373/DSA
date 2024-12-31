@@ -1,0 +1,74 @@
+﻿1. Introduction to C# and .NET
+Overview of C# and its features.
+Understanding the .NET Framework and .NET Core.
+Installation of Visual Studio / Visual Studio Code.
+Writing your first C# program ("Hello World").
+
+
+2. Language Basics
+Data Types: int, float, double, char, string, bool, etc.
+Variables and Constants: Declaration, initialization, const, readonly.
+Type Casting: Implicit and explicit casting, Convert class.
+Operators: Arithmetic, relational, logical, bitwise, assignment, and typeof.
+Control Statements:
+	If-else, switch-case.
+	Loops: for, while, do-while, foreach.
+	Jump statements: break, continue, return, goto.
+
+
+3. Object-Oriented Programming (OOP)
+Classes and Objects:
+	Defining classes and creating objects.
+	this keyword.
+Encapsulation:
+	Access Modifiers: public, private, protected, internal.
+	Properties (getters and setters).
+Inheritance:
+	Base and derived classes.
+	virtual, override, and sealed keywords.
+Polymorphism:
+	Method overloading and overriding.
+	Abstract classes and methods.
+Interfaces:
+	Defining and implementing interfaces.
+Static Members:
+	Static methods, fields, and constructors.
+Partial Classes and Methods.
+
+
+
+4. Advanced Language Features (Basics)
+Collections:
+	Arrays, Lists, Dictionaries, Stacks, Queues.
+	LINQ basics (filtering, ordering).
+Delegates and Events:
+	What is a delegate?
+	Basics of events and handlers.
+Exception Handling:
+	Try-catch-finally blocks.
+	Custom exceptions.
+Generics:
+	Generic classes and methods.
+	Constraints on generics.
+
+
+5. Input/Output (I/O)
+Console Input and Output:
+	Console.ReadLine and Console.WriteLine.
+File Handling:
+	Reading and writing files.
+	Using StreamReader, StreamWriter, and File class.
+
+
+6. C# Features and Tools
+Attributes: Basics of [Obsolete], [Serializable], etc.
+Reflection: Introduction to working with metadata.
+Async and Await:
+	Basics of asynchronous programming.
+	Tasks and async/await.
+
+7. Miscellaneous
+	Namespaces and using directives.
+	Preprocessor directives (#if, #else, #endif).
+	Debugging basics in Visual Studio.
+	Introduction to NuGet packages.

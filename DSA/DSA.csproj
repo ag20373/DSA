@@ -51,7 +51,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="C_Sharp_CheatSheet.txt" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CheatSheets\CSharp\Keywords\Static.txt" />
+    <Content Include="C_Sharp_Syllabus.txt" />
+    <Content Include="Days_Tracking.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="2_DataStructure_Basics\3_Arrays\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

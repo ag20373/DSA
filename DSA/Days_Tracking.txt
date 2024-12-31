@@ -1,0 +1,6 @@
+﻿31-dec-2024
+	1. First Program(1_Basics/1_FirstProgram.cs)
+	2. Static Keyword(CheatSheet/CSharp/KeyWords/Statics)
+	3. How to Commit Code in GitHub
+	
+01-jan-2025

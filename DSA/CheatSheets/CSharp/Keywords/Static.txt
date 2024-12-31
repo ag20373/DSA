@@ -1,0 +1,36 @@
+﻿1. Basics
+	-> Static Keywords Means "Shared" and belongs to itself(Class) - Not inititated when we create object.
+	-> Static members are shared accross all the Object (if allowed)/ or can directly allowed to call from Class name.
+	-> Instance Method can be called from Object While Static Method can be directly called from Object.
+	-> Static classes are sealed implicitly and cannot inherit or be inherited
+
+2. Eg :- 
+		Without Static when we create a object ,each object will have their own property (Object Own Name)
+		With Static means All the object will share a single Property (Object House Address)
+
+3. Static Class : 
+	-> A Static Class Cannot be Inititated means Cannot made objects.
+	-> All Members in Static Class must be static
+	-> Commonly Used for Helper Class or Utility Class
+	-> Eg :- 1_Basics/1_FirstProgram.cs/StaticClass or Search(StaticClass)
+
+4. Static Fields :
+	-> Belong to type(to class itself) , don't get assigned to Objects when Created
+	-> Shared Across All The instance, if class allows it.
+	-> Cannot Directly be called from Objects but using Class name.
+	-> Eg :- 1_Basics/1_FirstProgram.cs/StaticField or Search(StaticField)
+
+5. Static Methods :
+	-> Cannot directly be accessed Class Objects , But can be accessed by the class name.
+	-> Eg :- 1_Basics/1_FirstProgram.cs/StaticMethod or Search(StaticMethod)
+
+6. Static Property :
+	-> Used to Encapsulate static Propery(No Direct Access)
+	-> Eg :- 1_Basics/1_FirstProgram.cs/StaticPropery or Search(StaticPropery)
+
+7. Static Constructor : 
+	-> Used to initiate Static field and perform setup tasks.
+	-> Automatically called once, before the first use of any static member or instance of the class.
+	-> Eg :- 1_Basics/1_FirstProgram.cs/StaticConstructor or Search(StaticConstructor)
+
+	

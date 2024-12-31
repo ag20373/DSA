@@ -11,10 +11,26 @@ namespace DSA
     {
         static void Main(string[] args)
         {
-            #region 1_Basics
-            _1_FirstProgram.StringDisplayDirectly("Called Using Static");
-            _1_FirstProgram obj = new _1_FirstProgram();
-            obj.StringDisplayObject("Called Using Object");
+            #region 1_Basics 
+            #region  _1_FirstProgram/StaticKeyWord
+            //_1_FirstProgram.StringDisplayDirectly("Called Using Static");
+            //_1_FirstProgram obj = new _1_FirstProgram();
+            //obj.StringDisplayObject("Called Using Object");
+            //Programfail obj1 = new Programfail();
+            #endregion
+
+
+
+            #endregion
+
+            #region 2_DataStructure_Basics
+
+            #region 3_Arrays
+
+
+
+            #endregion
+
             #endregion
         }
     }
