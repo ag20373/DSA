@@ -111,4 +111,81 @@ namespace DSA._1_Basics
     #endregion
 
     #endregion
+
+    #region ref KeyWord
+
+    class refKeyword
+    {
+        private void SwapTwoNumberFunction(ref int a ,ref int b)
+        {
+            int temp = a;
+            a = b;
+            b = temp;
+        }
+
+        public void refKeywordExample()
+        {
+            int a = 10; int b = 20;
+            int c;
+            //SwapTwoNumberFunction(ref a, ref c); Complite Time Error Bcoz C is not initilized
+            Console.WriteLine($"a = {a} , b = {b}");
+            SwapTwoNumberFunction(ref a, ref b);
+            Console.WriteLine($"a = {a} , b = {b}");
+
+        }
+    }
+
+    #endregion
+
+    #region ref Vs Out
+
+    public class refvsout
+    {
+        private void refExample(ref int a)
+        {
+            a = 10; // modifies original a
+        }
+
+        private void outExample(out int a)
+        {
+            a = 10; //If i reove this , then system will show compile error
+        }
+
+        private void ComplexExample(ref int a , ref int b , out int c ,out int d ,ref int[] arr ,out int[] brr)
+        {
+            a = 100;
+            c = a * b;
+            d = arr[3];
+            arr[1] = 1;
+            brr = new int[] { 100,442,4232,3412};
+        } 
+
+        public void mainclass()
+        {
+            int a = 10; int b;
+
+            refExample(ref a);
+            outExample(out b);
+
+            int aa = 10; int bb = 20;
+            int c, d;
+            int[] arr = new int[] { 10,312,31,42,12};
+            int[] brr;
+
+            ComplexExample(ref aa, ref bb, out c, out d, ref arr, out brr);
+
+            Console.WriteLine($"a : {aa} ,b : {bb} ,c : {c}, d : {d}");
+
+            foreach(var item in arr)
+            {
+                Console.WriteLine(item);
+            }
+            foreach (var item in brr)
+            {
+                Console.WriteLine(item);
+            }
+        }
+    }
+
+    #endregion
 }

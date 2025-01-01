@@ -1,6 +1,12 @@
 ﻿31-dec-2024
-	1. First Program(1_Basics/1_FirstProgram.cs)
-	2. Static Keyword(CheatSheet/CSharp/KeyWords/Statics)
+	1. First Program(1_Basics\1_FirstProgram.cs)
+	2. Static Keyword(CheatSheet\CSharp\KeyWords\Statics)
 	3. How to Commit Code in GitHub
 	
 01-jan-2025
+	1. Array Basics(DSA\_2_DataStructure_Basics\_3_Arrays\One_D_Array) 
+	2. How To Create 1-D Array(DSA\_2_DataStructure_Basics\_3_Arrays\One_D_Array\CreateArray()) 
+	3. Array Basics Operations (DSA\_2_DataStructure_Basics\_3_Arrays\ArrayOperations\BasicOperation(int[] arr)) 
+	4. Array Theory(DSA\CheatSheets\Data_Structures\Arrays\1DArrayTheory.txt)
+	5. ref KeyWords
+	6. ref vs out 

@@ -1,4 +1,5 @@
 ﻿using DSA._1_Basics;
+using DSA._2_DataStructure_Basics._3_Arrays.One_D_Array;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +14,7 @@ namespace DSA
         {
             #region 1_Basics 
             #region  _1_FirstProgram/StaticKeyWord
-            //_1_FirstProgram.StringDisplayDirectly("Called Using Static");
-            //_1_FirstProgram obj = new _1_FirstProgram();
-            //obj.StringDisplayObject("Called Using Object");
-            //Programfail obj1 = new Programfail();
+            
             #endregion
 
 
@@ -27,7 +25,7 @@ namespace DSA
 
             #region 3_Arrays
 
-
+            //_1_ArrayBasics.ArrayDefaultValues();
 
             #endregion
 

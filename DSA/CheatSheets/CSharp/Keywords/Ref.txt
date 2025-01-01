@@ -1,0 +1,10 @@
+﻿1. The ref Keyword in C# used to pass a variable by reference to a method. This allows the method to modify the value of the argument and have the chnage reflected outside the method.
+
+2. Key Points about ref
+	a. Pass by Reference 
+	b. Must be declared in both method signature and when calling it.
+	c. Comparison to out : Both pass by reference , but ref required the varibale to be initialized before being passed, while out does not.
+	d. Variable Must be Initilized before Calling with ref in method .
+
+3. Example : 1_Basics/1_FirstProgram.cs/refKeyword or Search(refKeyword)
+

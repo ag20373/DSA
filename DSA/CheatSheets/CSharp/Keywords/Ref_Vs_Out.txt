@@ -1,0 +1,33 @@
+﻿1. Difference Between ref Vs out 
+	Feature			ref						out
+	Initiliation    must be initilized      no need to initilized
+	
+	Purpose			Read and modify the		Provides Only output.
+					input.
+	
+	Keyword			Required in both		Required in both method defination
+					method Defination		and call.
+					And Call.
+	
+	Return			Can Use and Modify		Must Assign Value to the parameter
+	Behaviour
+
+	Use Case		Bi-directional data		Uni-directional data flow
+					flow				
+
+2. Example	1_Basics/1_FirstProgram.cs/refvsout or Search(refvsout)
+
+3. We can Return Multiple Values Using out and modify multiple Values using ref.
+
+4. Array Example : 1_Basics/1_FirstProgram.cs/refvsout->ComplexExample or Search(ComplexExample)
+
+5. Compllie Time Error If Valirable are Initilized in case of Using ref -- Complite time Error in case we dont return the varibale with some value.
+
+6. Best Practice :
+	1. Avoid overusing ref it can make code harder to understand 
+	2. Use it when a method meeds to read and modify a varibale.
+	3. Use out when we wna to return multiple output from a method.
+
+7. Alternatives : 
+	a. Use return values (Tuple or custome classes) insted of out for cleaner APIs.
+	b. Use in for read only referneces...

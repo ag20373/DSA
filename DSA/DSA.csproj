@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1_Basics\1_FirstProgram.cs" />
+    <Compile Include="2_DataStructure_Basics\3_Arrays\One_D_Array\1_ArrayBasics.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,12 +55,13 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CheatSheets\CSharp\Keywords\Ref.txt" />
+    <Content Include="CheatSheets\CSharp\Keywords\Ref_Vs_Out.txt" />
     <Content Include="CheatSheets\CSharp\Keywords\Static.txt" />
+    <Content Include="CheatSheets\Data_Structures\Arrays\1DArrayTheory.txt" />
     <Content Include="C_Sharp_Syllabus.txt" />
     <Content Include="Days_Tracking.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="2_DataStructure_Basics\3_Arrays\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
