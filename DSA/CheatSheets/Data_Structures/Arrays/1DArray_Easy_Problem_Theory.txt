@@ -1,0 +1,108 @@
+﻿
+1. Find The Largest And Smallest Element In Array
+	-> Brute Force Approach 
+		Algorithm
+		a. Sort The Array List
+		b. Take Min as 1 and Max as Last
+		
+		Time Complexity : O(nlogn) Bcoz of Sorting
+		Space Complexity : O(1)
+
+		Example : Stiverr_PlayList/3_Array/1_Easy/(_1_LargestElementInArray) 
+
+	-> Optimal Approach
+		Algorithm
+		a. Take Two Var Lar , Sam 
+		b. Iterate the array 
+		c. Update Lar With Largest , sam with Smallest
+		
+		Time Complexity : O(N)
+		Space Complexity : O(1)
+
+		Example : Stiverr_PlayList/3_Array/1_Easy/(_1_LargestElementInArray)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Find The Second Largest Element in Array
+	-> Brute force Approach
+	    Algorithm
+		1. Sort the Array 
+		2. Take Second Last and second 
+		Note : All the elements Has to be Unique
+
+		Time complexity : O(nlogn) Bcoz of Sorting
+		Space Complexity :  O(1)
+		
+		Example : Stiverr_PlayList/3_Array/1_Easy/(_2_SecondLargestElement) 
+	
+	-> Optimal Solution 
+		Algorithm 
+		1. Iterate The Array
+		2. -> If there is element in array Greater then Largest , Assign Largest to Second Largest and LArgest with array element .
+		  Example : LArgest = 20 , Arr[i] = 30 ,SecondLArgest =10 => 
+		             SecondLargest = LArgest(20) ,LArgest = Arr[i](30) 
+		   -> If the element is not greater then largest , check if the element is greater then SecondLargest ,if true check if that number not already Largest . 
+		   Example : Largest =  30 , Arr[i] = 30 ,SecondLargest = 20  
+		              SecondLargest < 30 but Largest and arr[i]samme no change.
+		   
+		Time complexity : O(n) Simple Iterating Array
+		Space Complexity :  O(1)
+
+		Example : Stiverr_PlayList/3_Array/1_Easy/(_2_SecondLargestElement) 
+
+		--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Check If the Array Is Sort Or Not
+	-> Brute Force 
+	   Alogrithm :
+	   1. Take Each Elemnt one by one 
+	   2. Comapre It With Rest of the Elements Ahead of it.
+
+	   Time Complexity : O(N^N) Bcoz We are Iterating Loop For Each element.
+	   Space Complexity : O(1)
+
+	   Example :  Stiverr_PlayList/3_Array/1_Easy/(_3_CheckArrayIsSorted) 
+
+	-> Optimal Solaution : 
+		Algorithm 
+		1. Run a loopp on Array .
+		2. Comapre Each elemnt to its next one.
+		3. In any case i > i+1 
+		4. return false else True
+
+		Time Complexity : O(N) One Loop Only 
+		Space Complexity : O(1)
+		
+		Example : Stiverr_PlayList/3_Array/1_Easy/(_3_CheckArrayIsSorted)
+		--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Remove The Duplicate From Array .
+	-> Brute Force
+		Explanation : We Will Solve This Problem By Using HashSet(HastSet Only Contain Unique elements) 
+		
+		Algorithm : 
+		1. Create a HashSet 
+		2. Iterate The Array and Add the element in HashSet .
+		3. Return The HashSet.
+
+		Time Complexity : [O(N)]
+		Space Complexity : O(N) - If All The elements are Unique.
+
+		Example : _4_RemoveDuplicatesFromArray
+
+	-> Optimal Approach 
+		Explanation : Here We will not use hashset but first to sort the array , then Use Two Pointer Approach
+
+		Algorithm : 
+		1. Assumption is Array Already Sorted
+		2. Iterating The Array  from i =1 and Pointer Points to 1;
+		3. If We find the Element != Previous elements
+		4. Replace that with Pointer eLement 
+		5. Incremen the Pointer.
+
+		Time Complixity : O(N) For iterating the whole array. In Cae Of Including the Array.Sort Algorithm  then O(N*LogN)
+		Space Compleixty  : O(1)
+
+		Example : _4_RemoveDuplicatesFromArray
+		--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

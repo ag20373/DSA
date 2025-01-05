@@ -40,3 +40,11 @@
 	14. Resizing The Array.
 	15. Find Sum , Max ,  Min , Avg in Array.
 	Example : DSA/2_DataStructure_Basics/3_Arrays/One_D_Array/_1_ArrayBasics/ArrayOperations/(BasicOperation(int[] arr)) or Search(BasicOperation(int[] arr)) 
+
+11. If ArraySize Is Zero Sum , MAx , Min Return Exception....
+
+12. Array are Pass By Reference By default
+	-> IF we are Modifying the Array in method, it will get replace by the oriiginal value.
+	-> If but are assigning a new array in method , it will get Affect locally in methods but not the original array.
+	-> To Affect the Orginal Array , We have to Use the ref Keyword in method sinature and as a passing number.
+	Example :- (_3_Array_Pass_by_Reference_and_Pass_By_Value)
