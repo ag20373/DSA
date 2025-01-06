@@ -39,7 +39,7 @@ namespace DSA.Stiverr_PlayList._3_Arrays._1_Easy
             CommonClass.PrintArray(arr);
         }
         
-        public static void optimalSolution(int[] arr)
+        public static void optimalSolution(int[] arr) 
         {
             CommonClass.Print(false);
             CommonClass.PrintArray(arr);
