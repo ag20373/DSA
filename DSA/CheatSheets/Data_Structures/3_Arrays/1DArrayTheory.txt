@@ -1,0 +1,61 @@
+﻿1. Arrays : ID Array -- datastructure -- Collection of Same Type of data -- contiguous memory locations -- simplest form of array.
+
+2. Features : Fixed Size , Zero Based Indexing , Homogeneous Elements ,Access By Index.
+
+3. Declaration : datatype[] arrayName;
+
+4. Initilization : 
+	1. Without Values : arrayName = new dattype[size];
+	2. With Values :  datatype[] arrayname = new datatype[] {value1 ,valu2 ,..., valueN};
+	3. Short Suntex : datatype[] arrayName = {Value1 ,Value2 , ... , ValueN}
+    4. Example : DSA/2_DataStructure_Basics/3_Arrays/One_D_Array/_1_ArrayBasics/(CreateArray()) or Search(CreateArray())
+	
+5. Default Values : 0 , 0.0 for Primitive ,null for (String type ,object Type) , false for bool.
+   Example : DSA/2_DataStructure_Basics/3_Arrays/One_D_Array/_1_ArrayBasics/(ArrayDefaultValues()) or Search(ArrayDefaultValues())
+
+6. Accessing Array : 
+	First : arr[0] , Last : arr[arr.Length - 1] 
+
+7. Modifying Array : 
+	arr[2] = 10 ;
+
+8. Advantages : Fast Access , Memoery Efficient ,Easy to Use
+
+9. Limitiation : Fixed Size , Same datatype ,Indexing Error Exception.
+
+10. Array Operations : 
+	1. Accessing The Array Elements.                             [O(1) - Constant Time]
+	2. Modifying The Array Elements.                             [O(1) - Constant Time]
+	3. Traversing The Array Elements.                            [O(n) - Linear time]
+	4. Sort The Array.                                           [O(n log n)- Merge Sort]
+	5. Reverse The Array.                                        [O(n) - Linear time]
+	6. Searching The Index Of Elements.                          [O(n) - Linear time ,O(log n) - Logarithmic time sorted array]
+	7. Finding Array Length.                                     [O(1) - Constant Time]
+	8. Checking The Existance Of Array Elements.                 [O(n) - Linear time ,O(log n) - Logarithmic time sorted array]
+	9. Copying The Array To New Array.                           [O(n) - Linear time]
+	10. Finding The Array Elements.                              [O(n) - Linear time ,O(log n) - Logarithmic time sorted array]
+	11. Clearing the Specified Indexes in Array.                 [O(k) - Linear time]
+	12. Cloning the Array.                                       [O(n) - Linear time]
+	13. Converting The Array To String.                          [O(n) - Linear time]
+	14. Resizing The Array.                                      [O(n) - Linear time]
+	15. Find Sum , Max ,  Min , Avg in Array.                    [O(n) - Linear time]
+	Example : DSA/2_DataStructure_Basics/3_Arrays/One_D_Array/_1_ArrayBasics/ArrayOperations/(BasicOperation(int[] arr)) or Search(BasicOperation(int[] arr)) 
+
+11. If ArraySize Is Zero Sum , MAx , Min Return Exception....
+
+12. Array are Pass By Reference By default
+	-> IF we are Modifying the Array in method, it will get replace by the oriiginal value.
+	-> If but are assigning a new array in method , it will get Affect locally in methods but not the original array.
+	-> To Affect the Orginal Array , We have to Use the ref Keyword in method sinature and as a passing number.
+	Example :- (_3_Array_Pass_by_Reference_and_Pass_By_Value)
+
+13. Rotation of Arrays Size N ,  P time
+	Formula : Rotation : P % N;
+	Explanation : 
+				  -> Consider Array Size is 10 , We Need Rotation 23 Time
+				  -> N =10 , P23 
+				  -> Which Array of Size 10 need to be Rotated 23 Time. 
+				  -> Every Time Array Rotates 10 Time ,it come back to original Place 
+				  -> Rotation 20 Times makes it irrevalent ..
+				  -> We Only need it to rotate it for 3 Time.
+				  -> Which We Get From 23 % 10 = 3.

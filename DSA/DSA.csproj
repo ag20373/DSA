@@ -53,6 +53,10 @@
     <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\2_SecondLargestElement.cs" />
     <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\3_CheckArrayIsSorted.cs" />
     <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\4_RemoveDuplicatesFromArray.cs" />
+    <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\5_LeftRotateAnElementByOne.cs" />
+    <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\6_LeftOrRightRotateByDnum.cs" />
+    <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\7_MoveZerosToEnd.cs" />
+    <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\8_LinearSearch.cs" />
     <Compile Include="Stiverr_PlayList\3_Arrays\CommonClass.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -68,8 +72,10 @@
     <Content Include="CheatSheets\CSharp\Keywords\Ref.txt" />
     <Content Include="CheatSheets\CSharp\Keywords\Ref_Vs_Out.txt" />
     <Content Include="CheatSheets\CSharp\Keywords\Static.txt" />
-    <Content Include="CheatSheets\Data_Structures\Arrays\1DArrayTheory.txt" />
-    <Content Include="CheatSheets\Data_Structures\Arrays\1DArray_Easy_Problem_Theory.txt" />
+    <Content Include="CheatSheets\Data_Structures\1_Basics\Time_And_Space_Complexities .txt" />
+    <Content Include="CheatSheets\Data_Structures\3_Arrays\1DArrayTheory.txt" />
+    <Content Include="CheatSheets\Data_Structures\3_Arrays\1DArray_Easy_Problem_Theory.txt" />
+    <Content Include="CheatSheets\Data_Structures\1_Basics\Maths.txt" />
     <Content Include="C_Sharp_Syllabus.txt" />
     <Content Include="Days_Tracking.txt" />
   </ItemGroup>
