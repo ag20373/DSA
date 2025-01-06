@@ -27,5 +27,18 @@ namespace DSA.Stiverr_PlayList._3_Arrays
                 Console.WriteLine("Array Before");
             }
         }
+
+        public static void BruteForceSolution(int[] arr)
+        {
+            CommonClass.Print(false);
+            CommonClass.PrintArray(arr);
+        }
+
+        public static void optimalSolution(int[] arr)
+        {
+            CommonClass.Print(false);
+            CommonClass.PrintArray(arr);
+
+        }
     }
 }

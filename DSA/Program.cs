@@ -67,12 +67,21 @@ namespace DSA
 
             #endregion
 
-            int[] arr = { 7, 7, 7, 7, 7, 7 };
-            int[] arr2 =  { 8,-42342,5,7,9};
+            int[] arr = { 1, 2, 0, 4, 5, 0 ,0,8,9,10};
+            int[] arr2 =  { 8,0,-0,7,9};
             ////_1_LargestElementInArray.ArrayMAx();
-            _4_RemoveDuplicatesFromArray.optimalSolution(arr);
+
+            Console.WriteLine("BruteForceSolution");
+            _7_MoveZerosToEnd.optimalSolution(arr);
             Console.WriteLine();
-            _4_RemoveDuplicatesFromArray.optimalSolution(arr2);
+            _7_MoveZerosToEnd.optimalSolution(arr2);
+
+            //Console.WriteLine("///////////////////////////////////");
+
+            //Console.WriteLine("OptimalSolution");
+            //_6_LeftOrRightRotateByDnum.optimalSolution(arr);
+            //Console.WriteLine();
+            //_6_LeftOrRightRotateByDnum.optimalSolution(arr2);
         }
         
     }

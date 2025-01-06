@@ -1,0 +1,10 @@
+﻿1. Rotation of Arrays Size N ,  P time
+	Formula : Rotation : P % N;
+	Explanation : 
+				  -> Consider Array Size is 10 , We Need Rotation 23 Time
+				  -> N =10 , P23 
+				  -> Which Array of Size 10 need to be Rotated 23 Time. 
+				  -> Every Time Array Rotates 10 Time ,it come back to original Place 
+				  -> Rotation 20 Times makes it irrevalent ..
+				  -> We Only need it to rotate it for 3 Time.
+				  -> Which We Get From 23 % 10 = 3.

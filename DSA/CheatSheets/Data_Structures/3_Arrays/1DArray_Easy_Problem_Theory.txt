@@ -106,3 +106,81 @@
 		Example : _4_RemoveDuplicatesFromArray
 		--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+ 5. Left Or Right Rotate an Array By One
+	-> Optimal Solution : 
+		Explanation : Using Local Temp variable To Sollve This 
+
+		Algorithm :
+		1. Store the First(Left Rotate) or Last(Right Rotate) Elemnt in Temp Var
+		2. Iterate the Array -> Left From 1 / Right n-2 
+		3. Repace Element arr[n-1] = arr[n] / arr[n+1] =arr[n]
+		4. Store the Temp Var.
+
+		Time Complixity : O(N) For Ierating The Array
+		Space Compleixty  : O(1) For Alogirthm ,O(N) For Array
+
+		Example : _5_LeftRotateAnElementByOne
+		--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 6. Left or Right Rotate By d 
+	-> BruteForce 
+		Algo :
+		1. Figure Out ActualNoofRotation Using Rotation % Arr.Length
+		2. Store All the Elelment in Local List /Array
+		3. Left Shift the Array.
+		4. Place Local Array In Right Place.
+
+		Time : O(N) + O(N-D) + O(D) => O(2N) => O(N)
+		Space : O(D)
+
+		Example : _6_LeftOrRightRotateByDnum
+
+	-> Optimal Solution
+		Algo : 
+		1. Reverse the Array Till 0 to d ,
+		2. Rervese the array from d to N.
+		3. Reverse the array from 0 to N.
+
+		Time : O(N) + O(N-D) + O(D) => O(2N) => O(N)
+		Space : O(1)
+
+		Example : _6_LeftOrRightRotateByDnum
+
+		--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+  7. Move Zeros To End 
+
+	 -> BruteForce 
+	    Algo :
+		1. Store Data To Temp Array
+		2. Traverse The Temp array and Repace Each element in array.
+		3. Traverse Left Index , repace with Zero.
+		
+		Time : O(N) 
+		Space : O(K)
+
+		Example : BruteForceSolution
+
+
+	-> Optimal  
+	    Algo : Two Pointer Solution.
+		
+		Time : O(N) 
+		Space : O(1)
+
+		Example : BruteForceSolution
+		--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  8. Linear Serach 
+	 -> Algorithm :
+	 1. Iterate the Array .
+	 2. Check If the Element is Present or not.s
+
+	 Time : O(N)
+	 Space : O(1)
+
+	 Example : _8_LinearSearch
+
+
+
+
