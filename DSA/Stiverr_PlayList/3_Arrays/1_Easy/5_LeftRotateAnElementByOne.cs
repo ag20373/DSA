@@ -43,10 +43,11 @@ namespace DSA.Stiverr_PlayList._3_Arrays._1_Easy
 
             int Temp = arr[arr.Length-1];
 
-            for(int i = arr.Length - 2; i >= 0; i--)
+            for(int i = arr.Length-2; i > 0; i--)
             {
-                arr[i + 1] = arr[i];
+                arr[i] = arr[i - 1];
             }
+
             arr[0] = Temp;
 
             CommonClass.Print(true);

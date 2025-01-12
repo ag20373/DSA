@@ -67,14 +67,15 @@ namespace DSA
 
             #endregion
 
-            int[] arr = { 1, 2, 0, 4, 5, 0 ,0,8,9,10};
-            int[] arr2 =  { 8,0,-0,7,9};
+            int[] arr = { 1, 2, 0, 3, 4,0,5 };
+            //int[] arr2 =  { 8,0,-0,7,9};
+            int[] arr2 = { 0, 2, 0, 0, 7, 0, 0, 10,10,0,17 };
             ////_1_LargestElementInArray.ArrayMAx();
 
             Console.WriteLine("BruteForceSolution");
-            _7_MoveZerosToEnd.optimalSolution(arr);
+            PracticeMoveZerosToEnd.TwoPointersolution(arr);
             Console.WriteLine();
-            _7_MoveZerosToEnd.optimalSolution(arr2);
+            PracticeMoveZerosToEnd.TwoPointersolution(arr2);
 
             //Console.WriteLine("///////////////////////////////////");
 

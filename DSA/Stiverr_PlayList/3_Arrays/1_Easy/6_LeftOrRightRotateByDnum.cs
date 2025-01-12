@@ -29,12 +29,15 @@ namespace DSA.Stiverr_PlayList._3_Arrays._1_Easy
             }
 
             // Left Rotating
+            // We have Removed all the Elements that need to be at the end off array
+            // Now taking each element left one by one to top of array.
             for(int i = ActualRotation; i < arr.Length; i++)
             {
                 arr[i - ActualRotation] = arr[i];
             }
 
             // Re-Storing TempData back to Original
+            // Storing all those that need to be go in End now.
             for(int i = arr.Length-ActualRotation; i < arr.Length; i++)
             {
                 arr[i] = TempData[i - (arr.Length - ActualRotation)];
@@ -72,6 +75,87 @@ namespace DSA.Stiverr_PlayList._3_Arrays._1_Easy
                 start++;
                 end--;
             }
+        }
+    }
+
+    public static class RightRotateByDnum
+    {
+        // 1,2,4,5,7,9,9,10
+        // 9,9,10,1,2,4,5,7
+        public static void GoodApproach(int[] arr)
+        {
+            CommonClass.Print(false);
+            CommonClass.PrintArray(arr);
+
+            // Get The Actual No Of Rotation
+            int Rotation = 1035;
+            int ActualNoOfRotation = Rotation % arr.Length; //X
+            Console.WriteLine($"Number Of Rotations Req : {ActualNoOfRotation}");
+
+            //Store All The Elements From the Right Till Rotation to a List.
+            List<int> TempData = new List<int>();
+            int LoopStart = arr.Length - ActualNoOfRotation;
+            for (int i = LoopStart; i < arr.Length; i++) //O(ActualNoOfRotation)
+            {
+                TempData.Add(arr[i]);
+            }
+
+            // Right Rotate the Elements by (i+ActtualnumberOfRotations)
+            for (int i = (LoopStart) - 1; i >= 0; i--) //O(arr.Length - ActualNoOfRotation)
+            {
+                arr[i + ActualNoOfRotation] = arr[i];
+            }
+
+            int j = 0;
+            // Restore The Rest elements form list.
+            foreach (var item in TempData) //O(ActualNoOfRotation)
+            {
+                arr[j++] = item;
+            }
+
+            CommonClass.Print(true);
+            CommonClass.PrintArray(arr);
+        }
+
+        // Calculating the number of rotations:𝑂(1)
+        // Storing elements in TempData: O(ActualNoOfRotation).
+        // Right rotating elements: O(arr.Length−ActualNoOfRotation).
+        // Restoring elements: O(ActualNoOfRotation).
+
+        // Total : O(arr.Length)
+
+        public static void OptimalSolution(int[] arr)
+        {
+            CommonClass.Print(false);
+            CommonClass.PrintArray(arr);
+
+            // Get The Actual No Of Rotation
+            int Rotation = 1035;
+            int ActualNoOfRotation = Rotation % arr.Length; //X
+            Console.WriteLine($"Number Of Rotations Req : {ActualNoOfRotation}");
+            // 1,2,4,5,7,9,9,10
+            // 9,9,10,1,2,4,5,7q
+            ReverseArray(arr,0,(arr.Length-ActualNoOfRotation)-1);
+            ReverseArray(arr, arr.Length - ActualNoOfRotation,arr.Length-1);
+            ReverseArray(arr, 0, arr.Length-1); // O(N) Times
+
+            CommonClass.Print(true);
+            CommonClass.PrintArray(arr);
+
+        }
+
+        private static void ReverseArray(int[] arr, int Low, int High)
+        {
+            while (Low <= High)
+            {
+                int Temp = arr[Low];
+                arr[Low] = arr[High];
+                arr[High] = Temp;
+
+                Low++;
+                High--;
+
+            }   
         }
     }
 }

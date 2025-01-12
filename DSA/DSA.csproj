@@ -49,6 +49,7 @@
     <Compile Include="2_DataStructure_Basics\3_Arrays\One_D_Array\3_Array_Pass_by_Reference_and_Pass_By_Value.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\10_IntersectionOfTwoArray.cs" />
     <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\1_LargestElementInArray.cs" />
     <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\2_SecondLargestElement.cs" />
     <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\3_CheckArrayIsSorted.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\6_LeftOrRightRotateByDnum.cs" />
     <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\7_MoveZerosToEnd.cs" />
     <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\8_LinearSearch.cs" />
+    <Compile Include="Stiverr_PlayList\3_Arrays\1_Easy\9_FindTheUnion.cs" />
     <Compile Include="Stiverr_PlayList\3_Arrays\CommonClass.cs" />
   </ItemGroup>
   <ItemGroup>

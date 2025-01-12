@@ -62,4 +62,34 @@ namespace DSA.Stiverr_PlayList._3_Arrays._1_Easy
             return Pointer;
         }
     }
+
+    //Time Complexity  : O(N) and Space complxity : O(1)
+    static public class PracticeRemoveDuplicatesFromArray
+    {
+        //1,2,3,4,4,4,5
+        public static void Problem1(int[] arr)
+        {
+            CommonClass.Print(false);
+            CommonClass.PrintArray(arr);
+
+            int pointer = 1;
+            for(int  i = 1; i < arr.Length; i++)
+            {
+                if(arr[i] == arr[i - 1])
+                {
+                    continue;
+                }
+                else
+                {
+                    arr[pointer] = arr[i];
+                    pointer++;
+                }
+            }
+            for (int item = 0; item < pointer; item++)
+            {
+                Console.Write(arr[item]);
+            }
+            //Console.WriteLine($"Largest : {Largest} && Smallest : {smallest}");
+        }
+    }
 }

@@ -91,4 +91,52 @@ namespace DSA.Stiverr_PlayList._3_Arrays._1_Easy
         }
 
     }
+    static public class Practice2ndLargest_2ndSmallest
+    {
+        public static void Problem1(int[] arr)
+        {
+            CommonClass.Print(false);
+            CommonClass.PrintArray(arr);
+
+            int Largest = int.MinValue;
+            int Smallest = int.MaxValue;
+            int SLargest = int.MinValue;
+            int SSmallest = int.MaxValue;
+
+            //Time complexity :O(N) ,Space comlexity :O(1)
+            for(int i = 0; i < arr.Length; i++)
+            {
+                if (Largest < arr[i])
+                {
+                    SLargest = Largest;
+                    Largest = arr[i];
+                }
+                else if (SLargest < arr[i] && Largest != arr[i])
+                {
+                    SLargest = arr[i];
+                }
+
+                if (Smallest > arr[i])
+                {
+                    SSmallest = Smallest;
+                    Smallest = arr[i];
+                }
+                else if (SSmallest > arr[i] && Smallest != arr[i])
+                {
+                    SSmallest = arr[i];
+                }
+            }
+
+
+            if(SLargest == int.MinValue && SSmallest == int.MaxValue)
+            {
+                Console.WriteLine($"Second Largest : {-1} && Second Smallest : {-1}");
+            }
+            else
+            {
+               Console.WriteLine($"Second Largest : {SLargest} && Second Smallest : {SSmallest}");
+            }
+            
+        }
+    }
 }

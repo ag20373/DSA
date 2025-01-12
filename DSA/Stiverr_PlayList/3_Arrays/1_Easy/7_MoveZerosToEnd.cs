@@ -66,4 +66,32 @@ namespace DSA.Stiverr_PlayList._3_Arrays._1_Easy
 
         }
     }
+
+    static class PracticeMoveZerosToEnd
+    {
+        public static void TwoPointersolution(int[] arr)
+        {
+            CommonClass.Print(false);
+            CommonClass.PrintArray(arr);
+            //1, 2, 0, 3, 4,0,5
+            int Pointer = 0; 
+            for(int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] == 0)
+                {
+                    continue;
+                }
+                else
+                {
+                    int temp = arr[Pointer];
+                    arr[Pointer] = arr[i];
+                    arr[i] = temp ;
+                    Pointer ++;
+                }
+            }
+
+            CommonClass.Print(true);
+            CommonClass.PrintArray(arr);
+        }
+    }
 }

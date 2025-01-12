@@ -46,4 +46,28 @@ namespace DSA.Stiverr_PlayList._3_Arrays._1_Easy
             Console.WriteLine($"MAX = {Largest} , MIN = {Smallest}");
         }     
     }
+
+    //Time Complexity :O(N) ,Space complxity : O(1)
+    static public class PracticeLargest_Smallest
+    {
+        public static void Problem1(int[] arr)
+        {
+            CommonClass.Print(false);
+            CommonClass.PrintArray(arr);
+            int Largest = int.MinValue;
+            int smallest = int.MaxValue;
+            for(int i = 0; i < arr.Length; i++) // O(N) Times
+            {
+                if(Largest < arr[i])
+                {
+                    Largest = arr[i];
+                }
+                if(smallest > arr[i])
+                {
+                    smallest = arr[i];
+                }
+            }
+            Console.WriteLine($"Largest : {Largest} && Smallest : {smallest}");
+        }
+    } 
 }
